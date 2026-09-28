@@ -1,0 +1,79 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4D0D7"/>
+      <stop offset="0.5" stop-color="#F2C4CC"/>
+      <stop offset="1" stop-color="#E3A0AF"/>
+    </linearGradient>
+    <linearGradient id="cakeLayer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9D9D8"/>
+      <stop offset="0.45" stop-color="#F2B7C0"/>
+      <stop offset="1" stop-color="#D88C9A"/>
+    </linearGradient>
+    <linearGradient id="icing" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF9FC"/>
+      <stop offset="0.5" stop-color="#F7E3EA"/>
+      <stop offset="1" stop-color="#FFECE8"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D8879A" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#A65E76" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#D8879A" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 345) rotate(90) scale(60 36)">
+      <stop offset="0" stop-color="#FFF8D9"/>
+      <stop offset="0.25" stop-color="#FFE8A8"/>
+      <stop offset="0.7" stop-color="#FFB84D"/>
+      <stop offset="1" stop-color="#FF8E3C"/>
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <ellipse cx="600" cy="710" rx="360" ry="68" fill="url(#shadow)"/>
+
+  <g filter="url(#softGlow)">
+    <path d="M410 240H790C824 240 850 266 850 300V315C850 349 824 375 790 375H410C376 375 350 349 350 315V300C350 266 376 240 410 240Z" fill="url(#icing)"/>
+    <path d="M390 375H810C838 375 860 397 860 425V445C860 490 826 525 781 525H419C374 525 340 490 340 445V425C340 397 362 375 390 375Z" fill="url(#cakeLayer)"/>
+    <path d="M430 525H770C804 525 832 553 832 587V620C832 664 797 700 753 700H447C403 700 368 664 368 620V587C368 553 396 525 430 525Z" fill="url(#cakeLayer)"/>
+    <path d="M412 240C422 202 459 170 500 170H700C741 170 778 202 788 240H412Z" fill="#FBE7E7"/>
+    <path d="M365 395C390 375 412 375 430 395C447 416 470 422 500 422C531 422 557 416 578 398C596 381 618 377 640 391C661 405 677 424 703 426C728 429 756 419 782 397C801 381 824 378 845 390V440C845 470 820 495 790 495H410C380 495 355 470 355 440V405C355 400 358 397 365 395Z" fill="#FDEEF5" opacity="0.9"/>
+    <path d="M363 528C388 511 411 509 430 528C447 545 470 550 500 550C532 550 756 550 799 533C823 523 841 520 860 529V577C860 610 833 637 800 637H400C367 637 340 610 340 577V537C340 533 349 526 363 528Z" fill="#F8D3D6" opacity="0.8"/>
+  </g>
+
+  <g>
+    <g transform="translate(420 100)">
+      <path d="M30 0C34 28 30 36 18 48C10 55 6 62 7 72C8 84 22 90 34 88C50 85 58 70 58 54C58 40 51 27 40 14C31 5 34 0 30 0Z" fill="url(#flame)" filter="url(#softGlow)"/>
+      <rect x="20" y="70" width="16" height="52" rx="8" fill="#F4D79A"/>
+      <rect x="18" y="110" width="20" height="12" rx="5" fill="#F9E7B8"/>
+    </g>
+    <g transform="translate(520 92)">
+      <path d="M30 0C34 28 30 36 18 48C10 55 6 62 7 72C8 84 22 90 34 88C50 85 58 70 58 54C58 40 51 27 40 14C31 5 34 0 30 0Z" fill="url(#flame)" filter="url(#softGlow)"/>
+      <rect x="20" y="70" width="16" height="52" rx="8" fill="#F4D79A"/>
+      <rect x="18" y="110" width="20" height="12" rx="5" fill="#F9E7B8"/>
+    </g>
+    <g transform="translate(620 100)">
+      <path d="M30 0C34 28 30 36 18 48C10 55 6 62 7 72C8 84 22 90 34 88C50 85 58 70 58 54C58 40 51 27 40 14C31 5 34 0 30 0Z" fill="url(#flame)" filter="url(#softGlow)"/>
+      <rect x="20" y="70" width="16" height="52" rx="8" fill="#F4D79A"/>
+      <rect x="18" y="110" width="20" height="12" rx="5" fill="#F9E7B8"/>
+    </g>
+    <g transform="translate(720 96)">
+      <path d="M30 0C34 28 30 36 18 48C10 55 6 62 7 72C8 84 22 90 34 88C50 85 58 70 58 54C58 40 51 27 40 14C31 5 34 0 30 0Z" fill="url(#flame)" filter="url(#softGlow)"/>
+      <rect x="20" y="70" width="16" height="52" rx="8" fill="#F4D79A"/>
+      <rect x="18" y="110" width="20" height="12" rx="5" fill="#F9E7B8"/>
+    </g>
+    <g transform="translate(820 100)">
+      <path d="M30 0C34 28 30 36 18 48C10 55 6 62 7 72C8 84 22 90 34 88C50 85 58 70 58 54C58 40 51 27 40 14C31 5 34 0 30 0Z" fill="url(#flame)" filter="url(#softGlow)"/>
+      <rect x="20" y="70" width="16" height="52" rx="8" fill="#F4D79A"/>
+      <rect x="18" y="110" width="20" height="12" rx="5" fill="#F9E7B8"/>
+    </g>
+  </g>
+
+  <path d="M520 360C563 394 609 407 645 407C686 407 714 395 753 360" stroke="#F9EFFF" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M420 623C466 634 504 640 548 640C605 640 652 636 700 624C742 613 780 604 811 607" stroke="#F5D6DB" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+</svg>
