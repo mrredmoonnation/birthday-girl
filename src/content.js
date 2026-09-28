@@ -4,6 +4,7 @@
 // component code to update text, photos, or music.
 // ============================================================
 
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : (import.meta.env.BASE_URL + '/');
 export const siteConfig = {
   recipientName: "Riya",
   fromName: "Priyanshu",
@@ -12,15 +13,15 @@ export const siteConfig = {
   entryInstruction: "hold the flame, and make a wish",
   entryHint: "(press and hold)",
   entryTitle: "a universe, for you",
-  entrySubtitle: "Riya —",
+  entrySubtitle: "Riya â€”",
 
   // Files go in /public/audio/. Swap these paths for real files.
   audio: {
-    ambient: "/audio/vaaroon_vFniuna8.mp3",
-    climax: "/audio/vaaroon_vFniuna8.mp3",
-    chimeSoft: "/audio/chime-soft.mp3",
-    chimeShooting: "/audio/chime-shoot.mp3",
-    blowOut: "/audio/blow-out.mp3",
+    ambient: `${BASE}audio/vaaroon_vFniuna8.mp3`,
+    climax: `${BASE}audio/vaaroon_vFniuna8.mp3`,
+    chimeSoft: `${BASE}audio/chime-soft.mp3`,
+    chimeShooting: `${BASE}audio/chime-shoot.mp3`,
+    blowOut: `${BASE}audio/blow-out.mp3`,
   },
 
   constellationHint: "drag to explore \u00b7 tap a star",
@@ -48,7 +49,7 @@ export const siteConfig = {
 
 export const portraitPhotos = Array.from(
   { length: 16 },
-  (_, index) => `/images/priyanshu-${String(index + 1).padStart(2, "0")}.jpeg`
+  (_, index) => `${BASE}images/priyanshu-${String(index + 1).padStart(2, "0")}.jpeg`
 );
 
 // Loosely groups stars for the connecting-line reveal as she explores.
@@ -60,7 +61,7 @@ export const constellations = [
 ];
 
 // Position is normalized (0-1) and scaled to the pannable canvas at render time.
-// size: "sm" | "md" | "lg" — controls glow radius + star brightness.
+// size: "sm" | "md" | "lg" â€” controls glow radius + star brightness.
 // special: true marks the one "shy" star that drifts from the cursor.
 // isFinalStar: true marks the star that triggers the finale instead of a panel.
 export const stars = [
@@ -139,7 +140,7 @@ export const stars = [
   },
 ];
 
-// Shooting-star surprise lines — short, playful, one-time reveal per session.
+// Shooting-star surprise lines â€” short, playful, one-time reveal per session.
 export const surprises = [
   "you have the best laugh in any room",
   "i still smile at my phone like an idiot when you text",
@@ -160,7 +161,7 @@ export const cake = {
 };
 
 // ---- Shayari portal ----
-// Each entry is a short couplet. "translation" is optional — leave the
+// Each entry is a short couplet. "translation" is optional â€” leave the
 // string empty ("") to hide it for a couplet that doesn't need one.
 export const shayaris = [
   {
@@ -173,7 +174,7 @@ export const shayaris = [
   },
   {
     lines: ["dil ne kaha tha ek din tum aaogi,", "aaj lagta hai dil kabhi jhootha nahi tha."],
-    translation: "My heart once said you'd come one day — turns out it never lied.",
+    translation: "My heart once said you'd come one day â€” turns out it never lied.",
   },
   {
     lines: ["har khushi mein tera zikr hai,", "har khwaab mein tera hi aana hai."],
@@ -186,7 +187,7 @@ export const shayaris = [
 ];
 
 // ---- Moon Gallery portal ----
-// A scattered board of polaroids, separate from the constellation stars —
+// A scattered board of polaroids, separate from the constellation stars â€”
 // for photos that don't need a written memory attached, just a caption.
 export const gallery = [
   { id: "g1", image: portraitPhotos[8], caption: "Teri muskaan se har subah mehkaati hai", rotate: -6 },
@@ -198,3 +199,4 @@ export const gallery = [
   { id: "g7", image: portraitPhotos[14], caption: "Har din tere saath ek nayi kahani lagti hai", rotate: -2 },
   { id: "g8", image: portraitPhotos[15], caption: "Tumhi ho jahan, wahan sab kuch sukoon lagta hai", rotate: 3 },
 ];
+
